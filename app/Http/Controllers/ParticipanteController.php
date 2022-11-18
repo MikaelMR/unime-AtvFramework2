@@ -25,7 +25,7 @@ class ParticipanteController extends Controller
      */
     public function create()
     {
-        return view('cadastro.cadParticipantes');
+        return view('cadastro.participantes');
     }
 
     /**

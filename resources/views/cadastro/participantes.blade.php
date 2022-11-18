@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>cadastrar</title>
 </head>
 <body>
-
     <div class="container">
         <div colass = "row mt-5">
+
+
+
 
                 <form method="post" action="">
 
@@ -19,31 +20,26 @@
 
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="Text" class="form-control" name="nome" id="nome" placeholder="Nome">
+                        <input type="Text" class="form-control" name="nome" id="nome" placeholder="Digite o nome da banda">
                     </div>
                     <div class="mb-3">
-                        <label for="sobrenome" class="form-label">Sobrenome</label>
-                        <input type="Text" class="form-control" name="sobrenome" id="estilo" placeholder="Sobrenome">
+                        <label for="estilo" class="form-label">Estilo</label>
+                        <input type="Text" class="form-control" name="estilo" id="estilo" placeholder="Digite o estilo da banda">
                     </div>
                     <div class="mb-3">
-                        <label for="data_nascimento" class="form-label">Data de Nascimento</label>
-                        <input type="date" class="form-control" name="data_nascimento" id="data_nascimento" placeholder="Data de Nascimento">
+                        <label for="ano_criacao" class="form-label"> Ano de criação</label>
+                        <input type="Text" class="form-control" name="ano_criacao" id="ano_criacao" placeholder="Digite o ano de criação da banda">
                     </div>
                     <div class="mb-3">
-                        <label for="endereco" class="form-label">Endereço</label>
-                        <input type="Text" class="form-control" name="endereco" id="endereco" placeholder="Endereço">
+                        <label for="total_de_discos" class="form-label"> Total de discos</label>
+                        <input type="Text" class="form-control" name="total_de_discos" id="total_de_discos" placeholder="Digite o total de discos da banda">
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="Text" class="form-control" name="email" id="email" placeholder="Email@email.com">
+                        <button type="submit" class ="btn btn-success"> cadastrar</button>
                     </div>
-
-                    <div class="mb-3">
-                        <button type="submit" class ="btn btn-success">Cadastrar</button>
-                    </div>
-
                 </form>
             </div>
+
         </div>
      </div>
 
