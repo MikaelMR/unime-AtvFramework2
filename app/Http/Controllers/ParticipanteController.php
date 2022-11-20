@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Participante;
 use Illuminate\Http\Request;
+use App\Models\Participante;
 
 class ParticipanteController extends Controller
 {
@@ -36,10 +36,17 @@ class ParticipanteController extends Controller
      */
     public function store(Request $request)
     {
+        $dados = $request->validate([
+            'nome' => ['required', 'min:4'],
+            'sobrenome' => ['required'],
+            'data_nascimento' => ['required', 'date'],
+            'endereco' => ['required'],
+            'email' => ['required', 'email']
+        ]);
+
         $dados = $request -> all();
         Participante::create($dados);
 
-        // $request->session()->flash('success', 'Cadastrado com sucesso!');
     }
 
     /**

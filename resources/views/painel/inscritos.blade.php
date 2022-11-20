@@ -1,35 +1,33 @@
 @extends('layout.template')
 @section('main')
 
-<h1 class="mb-5">Listagem de veículos</h1>
+<h1 class="mb-5">Listagem de Participantes</h1>
 
 <table class="table">
     <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Modelo</th>
-            <th scope="col">Fabricante</th>
-            <th scope="col">Ano</th>
-            <th scope="col">Modelo</th>
-            <th scope="col">Lançamento</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sobrenome</th>
+            <th scope="col">Data de Nascimento</th>
+            <th scope="col">Endereço</th>
+            <th scope="col">Email</th>
         </tr>
     </thead>
     <tbody>
-        @foreach ($veiculos as $veiculo)
+        @foreach ($participantes as $participante)
 
         <tr>
-            <td>{{ $veiculo->id }}</td>
-            <td><a href="{{ route('veiculos.show', $veiculo->id) }}">{{ $veiculo->modelo }}</a></td>
-            <td>{{ $veiculo->fabricante }}</td>
-            <td>{{ $veiculo->ano_fabricacao }}</td>
-            <td>{{ $veiculo->ano_modelo }}</td>
-            <td>{{ $veiculo->disponivel_em }}</td>
+            <td>{{ $participante->id }}</td>
+            <td>{{ $participante->nome }}</td>
+            <td>{{ $participante->sobrenome }}</td>
+            <td>{{ $participante->data_nascimento }}</td>
+            <td>{{ $participante->endereco }}</td>
+            <td>{{ $participante->email }}</td>
         </tr>
 
         @endforeach
     </tbody>
 </table>
-
-{{ $veiculos->links() }}
 
 @endsection

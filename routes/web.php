@@ -14,6 +14,12 @@ use App\Http\Controllers\ParticipanteController;
 |
 */
 
-Route::get('painel/inscritos', [ParticipanteController::class, 'index']);
-Route::get('cadastro/participantes', [ParticipanteController::class, 'create']);
+
+Route::get('/', [ParticipanteController::class, 'index'])
+    ->name('painel.inscritos');
+
+Route::get('cadastro/participantes', [ParticipanteController::class, 'create'])
+    ->name('cadastro.participantes');
+
 Route::post('cadastro/participantes', [ParticipanteController::class, 'store']);
+
