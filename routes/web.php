@@ -23,3 +23,8 @@ Route::get('cadastro/participantes', [ParticipanteController::class, 'create'])
 
 Route::post('cadastro/participantes', [ParticipanteController::class, 'store']);
 
+/*
+    Mikael Ramos
+    Desenvolvimento com Frameworks
+*/
+
